@@ -1,11 +1,3 @@
-#######################################
-# FILE : game.py
-# WRITER : Noga_Friedman , nogafri , 209010479
-# Exercise: ex9
-# DESCRIPTION: A class Game of Rush Hour program.
-# STUDENTS I DISCUSSED THE EXERCISE WITH: -
-# WEB PAGES I USED: -
-#######################################
 import helper
 import sys
 from car import *
@@ -32,19 +24,11 @@ class Game:
 
     def __single_turn(self):
         """
-        Note - this function is here to guide you and it is *not mandatory*
-        to implement it. 
-
         The function runs one round of the game :
             1. Get user's input of: what color car to move, and what 
                 direction to move it.
             2. Check if the input is valid.
             3. Try moving car according to user's input.
-
-        Before and after every stage of a turn, you may print additional 
-        information for the user, e.g., printing the board. In particular,
-        you may support additional features, (e.g., hints) as long as they
-        don't interfere with the API.
         """
         while True:
             # print the board:
@@ -98,7 +82,7 @@ class Game:
             return 0
         return 1
 
-    def __check_move_legal(self, name, movekey, possible_moves):  # added function
+    def __check_move_legal(self, name, movekey, possible_moves): 
         """
         check if the move the user wants to make is legal.
         :param name: str - capital letter representing the car
@@ -126,7 +110,7 @@ class Game:
         return
 
 
-    def check_win(self):  # added function
+    def check_win(self): 
         """
         checks if the game is over (if user arrives at coordinate (3,7))
         :return: True if user won, False if not
@@ -135,7 +119,7 @@ class Game:
             return True
         return False
 
-    def start_game(self):  # added function
+    def start_game(self): 
         """
         loads the json file with the game data and initiates a new game.
         json file will be in the format of:
