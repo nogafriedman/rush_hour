@@ -1,12 +1,3 @@
-#######################################
-# FILE : board.py
-# WRITER : Noga_Friedman , nogafri , 209010479
-# Exercise: ex9
-# DESCRIPTION: A class Board of Rush Hour program.
-# STUDENTS I DISCUSSED THE EXERCISE WITH: -
-# WEB PAGES I USED: -
-#######################################
-
 class Board:
     """
     Class board.
