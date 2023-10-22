@@ -7,9 +7,6 @@ class Board:
     """
 
     def __init__(self):
-        # implement your code and erase the "pass"
-        # Note that this function is required in your Board implementation.
-        # However, is not part of the API for general board types.
         self.__board = self.initiate_board()
         self.__car_list = []  # a list of cars currently on board
 
